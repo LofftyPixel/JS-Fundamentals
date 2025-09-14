@@ -1,9 +1,9 @@
-console.log=Process .args.slice(2);
+#!/usr/bin/node
 
-if (args<=0){
-    console.log('No Argument');
-}else if (args>=1){
-    console.log('HBTN');
-}else{
-    console.log('HBTN cool')
+const firstArg = process.argv[2];
+
+if (firstArg === undefined) {
+  console.log('No argument');
+} else {
+  console.log(firstArg);
 }
